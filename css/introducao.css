@@ -46,7 +46,7 @@
     gap: 40px;
   }
   .intro h1{
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .intro h1:before{
     width: 30px;
@@ -54,7 +54,7 @@
     left: -20px;
   }
   .intro p{
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 10px;
   }
 }
