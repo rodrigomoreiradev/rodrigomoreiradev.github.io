@@ -55,6 +55,14 @@
   font-size: 1.125rem;
   font-weight: bold;
 }
+.projeto-titulo a{
+  text-decoration: none;
+  color: #171717;
+  border-bottom: 2px solid #CB11FF;
+}
+.projeto-titulo a:hover{
+ border-bottom: 4px solid #6400B2;
+}
 .projeto-texto{
   font-size: .875rem;
   line-height: 1.3;
