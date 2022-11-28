@@ -29,6 +29,9 @@ img {
   font-family: 'MuseoModerno',Arial, Helvetica, sans-serif;
 
 }
+.lilas{
+  color: #CB11FF;
+}
 @media (max-width:800px) {
   .subtitulo{
     font-size: 3rem;
