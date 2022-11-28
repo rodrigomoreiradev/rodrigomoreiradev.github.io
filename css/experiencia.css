@@ -1,0 +1,101 @@
+.experiencia{
+  max-width: 1200px;
+  padding: 80px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+.experiencia .subtitulo{
+  color: #E6E6E6;
+}
+.experiencia-texto{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #5c5c5c;
+}
+.experiencia-texto strong{
+  color: #171717;
+}
+.projeto{
+  display: grid;
+  gap: 10px 20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  border: 1px solid #CFCFCF;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+  background: #fff;
+}
+.projeto::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("/img/decoracao/ring.svg") no-repeat;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  z-index: -1;
+}
+.projeto-ano{
+  position: absolute;
+  top: 50px;
+  left: -100px;
+  width: 80px;
+  color: #5c5c5c;
+  font-size: .875rem;
+  text-align: right;
+}
+.projeto-titulo{
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.projeto-texto{
+  font-size: .875rem;
+  line-height: 1.3;
+  color: #5c5c5c;
+}
+.projeto-habilidade{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+.projeto-habilidade li{
+  font-size: .875rem;
+  line-height: 1.3;
+  border-radius: 5px;
+  background: #CFCFCF;
+  padding: 5px 10px;
+}
+@media (max-width:800px) {
+  .experiencia{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo{
+    color: #171717;
+  }
+  .experiencia-texto{
+    font-size: 1.25rem;
+  }
+  .projeto-ano{
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .projeto-ano::before{
+    content: "Ano ";
+  }
+}
+@media(max-width:500px){
+  .projeto{
+    grid-template-columns: 1fr;
+  }
+}

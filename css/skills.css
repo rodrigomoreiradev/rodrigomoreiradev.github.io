@@ -1,0 +1,33 @@
+.skills{
+  background: #171717;
+  color: #000;
+}
+.skills-container{
+  max-width: 1200px;
+  padding: 80px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+  position: relative;
+}
+.skills-bg{
+  background: #000;
+  padding: 30px;
+  border-radius: 5px;
+
+}
+.skills-habilidades{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media(max-width:800px){
+  .skills-container{
+    grid-template-columns: 1fr;
+  }
+  .skills .subtitulo{
+    color: #fff;
+  }
+}

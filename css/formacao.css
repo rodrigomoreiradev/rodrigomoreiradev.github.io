@@ -1,0 +1,124 @@
+.formacao {
+  background: #000;
+  color: #fff;
+}
+.formacao-container {
+  max-width: 1200px;
+  padding: 80px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+  position: relative;
+} 
+.formacao .subtitulo {
+  color: #2e2e2e;
+  max-width: 5ch;
+}
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #cfcfcf;
+}
+.formacao-texto strong {
+  color: #fff;
+}
+.bg-texto {
+  margin: 60px 120px;
+}
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.faculdade {
+  flex: 1;
+  background: #171717;
+  padding: 20px;
+  border-radius: 5px;
+}
+.faculdade-tipo {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a1a1a1;
+  margin-bottom: 10px;
+}
+.faculdade-titulo {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+.faculdade-titulo::before {
+  content: "";
+  display: block;
+  background: linear-gradient(0deg, #a00be7 32.81%, #cb11ff 66.67%);
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+}
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  color: #a1a1a1;
+}
+.cursos{
+  margin-bottom: 60px;
+}
+.formacao-extra h3{
+  font-size: .875rem;
+  line-height: 1.3;
+  color: #a1a1a1;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.formacao-extra h3::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+.cursos h3::before{
+  background: url("../img/icones/language_black_24dp.svg");
+}
+.idiomas h3::before{
+  background: url("../img/icones/book_black_24dp.svg");
+}
+.formacao-extra li{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.cursos li{
+  display: flex;
+  justify-content: space-between;
+}
+@media(max-width:800px){
+  .formacao-container{
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .formacao .subtitulo{
+    color: #fff;
+  }
+  .formacao-texto{
+    font-size: 1.125rem;
+  }
+  .formacao-extra h3::before{
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
